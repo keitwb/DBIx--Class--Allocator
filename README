@@ -1,0 +1,33 @@
+Allocator version 0.01
+======================
+
+A DBIx::Class component that gives ResultSets the ability to allocate blocks of
+auto-increment ids from the database.  This is useful for creating id pools that
+an application can reserve and use without having to be connected (through a web
+interface) to the database (e.g. mobile apps that might not always have network
+connectivity).
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  DBIx::Class
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2012 by Ben Keith
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.10.1 or,
+at your option, any later version of Perl 5 you may have available.
+
+
